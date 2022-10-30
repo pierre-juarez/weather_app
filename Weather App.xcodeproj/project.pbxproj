@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		241EB44B290E2A2200E9DB76 /* Wheater_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EB44A290E2A2200E9DB76 /* Wheater_AppApp.swift */; };
-		241EB44D290E2A2200E9DB76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EB44C290E2A2200E9DB76 /* ContentView.swift */; };
+		241EB44B290E2A2200E9DB76 /* Weather_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EB44A290E2A2200E9DB76 /* Weather_AppApp.swift */; };
+		241EB44D290E2A2200E9DB76 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EB44C290E2A2200E9DB76 /* WeatherView.swift */; };
 		241EB44F290E2A2500E9DB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241EB44E290E2A2500E9DB76 /* Assets.xcassets */; };
 		241EB452290E2A2500E9DB76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241EB451290E2A2500E9DB76 /* Preview Assets.xcassets */; };
+		241EB459290E2B1100E9DB76 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EB458290E2B1100E9DB76 /* WeatherService.swift */; };
+		241EB45B290E2F0B00E9DB76 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EB45A290E2F0B00E9DB76 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		241EB447290E2A2200E9DB76 /* Wheater App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wheater App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		241EB44A290E2A2200E9DB76 /* Wheater_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheater_AppApp.swift; sourceTree = "<group>"; };
-		241EB44C290E2A2200E9DB76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		241EB447290E2A2200E9DB76 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		241EB44A290E2A2200E9DB76 /* Weather_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_AppApp.swift; sourceTree = "<group>"; };
+		241EB44C290E2A2200E9DB76 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		241EB44E290E2A2500E9DB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241EB451290E2A2500E9DB76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		241EB458290E2B1100E9DB76 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		241EB45A290E2F0B00E9DB76 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		241EB43E290E2A2200E9DB76 = {
 			isa = PBXGroup;
 			children = (
-				241EB449290E2A2200E9DB76 /* Wheater App */,
+				241EB449290E2A2200E9DB76 /* Weather App */,
 				241EB448290E2A2200E9DB76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		241EB448290E2A2200E9DB76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				241EB447290E2A2200E9DB76 /* Wheater App.app */,
+				241EB447290E2A2200E9DB76 /* Weather App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		241EB449290E2A2200E9DB76 /* Wheater App */ = {
+		241EB449290E2A2200E9DB76 /* Weather App */ = {
 			isa = PBXGroup;
 			children = (
-				241EB44A290E2A2200E9DB76 /* Wheater_AppApp.swift */,
-				241EB44C290E2A2200E9DB76 /* ContentView.swift */,
+				241EB45A290E2F0B00E9DB76 /* Weather.swift */,
+				241EB458290E2B1100E9DB76 /* WeatherService.swift */,
+				241EB44A290E2A2200E9DB76 /* Weather_AppApp.swift */,
+				241EB44C290E2A2200E9DB76 /* WeatherView.swift */,
 				241EB44E290E2A2500E9DB76 /* Assets.xcassets */,
 				241EB450290E2A2500E9DB76 /* Preview Content */,
 			);
-			path = "Wheater App";
+			path = "Weather App";
 			sourceTree = "<group>";
 		};
 		241EB450290E2A2500E9DB76 /* Preview Content */ = {
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		241EB446290E2A2200E9DB76 /* Wheater App */ = {
+		241EB446290E2A2200E9DB76 /* Weather App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 241EB455290E2A2500E9DB76 /* Build configuration list for PBXNativeTarget "Wheater App" */;
+			buildConfigurationList = 241EB455290E2A2500E9DB76 /* Build configuration list for PBXNativeTarget "Weather App" */;
 			buildPhases = (
 				241EB443290E2A2200E9DB76 /* Sources */,
 				241EB444290E2A2200E9DB76 /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "Wheater App";
+			name = "Weather App";
 			productName = "Wheater App";
-			productReference = 241EB447290E2A2200E9DB76 /* Wheater App.app */;
+			productReference = 241EB447290E2A2200E9DB76 /* Weather App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 241EB442290E2A2200E9DB76 /* Build configuration list for PBXProject "Wheater App" */;
+			buildConfigurationList = 241EB442290E2A2200E9DB76 /* Build configuration list for PBXProject "Weather App" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				241EB446290E2A2200E9DB76 /* Wheater App */,
+				241EB446290E2A2200E9DB76 /* Weather App */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241EB44D290E2A2200E9DB76 /* ContentView.swift in Sources */,
-				241EB44B290E2A2200E9DB76 /* Wheater_AppApp.swift in Sources */,
+				241EB45B290E2F0B00E9DB76 /* Weather.swift in Sources */,
+				241EB44D290E2A2200E9DB76 /* WeatherView.swift in Sources */,
+				241EB44B290E2A2200E9DB76 /* Weather_AppApp.swift in Sources */,
+				241EB459290E2B1100E9DB76 /* WeatherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +274,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wheater App/Preview Content\"";
-				DEVELOPMENT_TEAM = 4WGURY53NQ;
+				DEVELOPMENT_ASSET_PATHS = "\"Weather App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTXUGF93M7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Se necesita la ubicación para obtener el clima.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,10 +304,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wheater App/Preview Content\"";
-				DEVELOPMENT_TEAM = 4WGURY53NQ;
+				DEVELOPMENT_ASSET_PATHS = "\"Weather App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTXUGF93M7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Se necesita la ubicación para obtener el clima.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		241EB442290E2A2200E9DB76 /* Build configuration list for PBXProject "Wheater App" */ = {
+		241EB442290E2A2200E9DB76 /* Build configuration list for PBXProject "Weather App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				241EB453290E2A2500E9DB76 /* Debug */,
@@ -329,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		241EB455290E2A2500E9DB76 /* Build configuration list for PBXNativeTarget "Wheater App" */ = {
+		241EB455290E2A2500E9DB76 /* Build configuration list for PBXNativeTarget "Weather App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				241EB456290E2A2500E9DB76 /* Debug */,
