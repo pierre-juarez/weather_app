@@ -30,9 +30,10 @@ struct WeatherView: View {
           .font(.largeTitle)
         
         
-        Text("☀️")
-          .font(.system(size: 100))
-          .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
+        Image("default")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: .infinity, height: 200)
         
         Text("It's sunny")
           .font(.system(size: 30))
