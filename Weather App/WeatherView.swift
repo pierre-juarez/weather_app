@@ -11,6 +11,7 @@ import SwiftUI
 
 struct WeatherView: View {
   
+  @ObservedObject var viewModel: WeatherViewModel
   
   var body: some View {
     
@@ -26,19 +27,19 @@ struct WeatherView: View {
         
         Spacer()
         
-        Text("My ubication")
+        Text(viewModel.cityName)
           .font(.largeTitle)
         
         
-        Image("default")
+        Image(viewModel.iconName)
           .resizable()
           .aspectRatio(contentMode: .fit)
-          .frame(width: .infinity, height: 200)
+          .frame(height: 200)
         
-        Text("It's sunny")
+        Text(viewModel.weatherDescription)
           .font(.system(size: 30))
         
-        Text("25°C")
+        Text(viewModel.temperature)
           .font(.system(size: 70))
           .bold()
           .padding(.bottom,50)
@@ -51,6 +52,7 @@ struct WeatherView: View {
       .foregroundColor(Color("textColor"))
       
     }
+    .onAppear(perform: viewModel.refresh)
     
     
   }
@@ -59,6 +61,6 @@ struct WeatherView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    WeatherView()
+    WeatherView(viewModel: WeatherViewModel(weatherService: WeatherService()))
   }
 }

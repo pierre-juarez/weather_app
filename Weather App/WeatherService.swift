@@ -10,22 +10,22 @@ import CoreLocation
 
 public final class WeatherService: NSObject {
   
-  private let locationManager = CLLocationManager()
-  private let API_KEY = "e76a30e7a41e3ae1e25def49fccd779e"
-  private var completionHandler : ((Weather) -> Void)?
+  let locationManager = CLLocationManager()
+  let API_KEY = "e76a30e7a41e3ae1e25def49fccd779e"
+  var completionHandler : ((Weather) -> Void)?
   
   public override init() {
     super.init()
     locationManager.delegate = self
   }
   
-  private func loadWeatherData(_ completionHandler: @escaping((Weather) -> Void) ){
+  func loadWeatherData(_ completionHandler: @escaping((Weather) -> Void) ){
     self.completionHandler = completionHandler
     locationManager.requestWhenInUseAuthorization()
     locationManager.startUpdatingLocation()
   }
   
-  private func makeDataRequest(forCoordinates coordinates: CLLocationCoordinate2D){
+  func makeDataRequest(forCoordinates coordinates: CLLocationCoordinate2D){
     guard let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(coordinates.latitude)&lon=\(coordinates.longitude)&appid=\(API_KEY)&units=metric".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
     
     guard let URL = URL(string: urlString) else { return }
