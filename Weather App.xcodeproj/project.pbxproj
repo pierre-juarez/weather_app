@@ -18,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		240C471E290F202700C80701 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		240C4722290F433300C80701 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Location.gpx; path = ../../../Downloads/Location.gpx; sourceTree = "<group>"; };
 		241EB447290E2A2200E9DB76 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		241EB44A290E2A2200E9DB76 /* Weather_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_AppApp.swift; sourceTree = "<group>"; };
 		241EB44C290E2A2200E9DB76 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -42,7 +41,6 @@
 		241EB43E290E2A2200E9DB76 = {
 			isa = PBXGroup;
 			children = (
-				240C4722290F433300C80701 /* Location.gpx */,
 				241EB449290E2A2200E9DB76 /* Weather App */,
 				241EB448290E2A2200E9DB76 /* Products */,
 			);
